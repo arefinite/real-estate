@@ -1,0 +1,30 @@
+[
+	{
+		"id": 1,
+		"photoUrl": "./images/img1.jpg",
+		"name": "IGO Society House",
+		"location": "Downtown Dubai",
+		"price": 320000000
+	},
+	{
+		"id": 2,
+		"photoUrl": "./images/img2.jpg",
+		"name": "IGO Society House",
+		"location": "Downtown Dubai",
+		"price": 320000000
+	},
+	{
+		"id": 3,
+		"photoUrl": "./images/img3.jpg",
+		"name": "IGO Society House",
+		"location": "Downtown Dubai",
+		"price": 320000000
+	},
+	{
+		"id": 4,
+		"photoUrl": "./images/img4.jpg",
+		"name": "IGO Society House",
+		"location": "Downtown Dubai",
+		"price": 320000000
+	}
+]

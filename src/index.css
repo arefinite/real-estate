@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	color: #3a3a3a;
+}
+
+h1 {
+	padding-bottom: 0.5rem;
+}
+
+.heading {
+ @apply text-lg font-bold
+}
+
+.box-container {
+	@apply container p-4;
+}
+
+.gap {
+	@apply mt-4;
+}
+
+.nav-item {
+	@apply text-base font-bold;
+}
+
+.dropdown {
+	@apply transition-transform transform origin-top mb-4 duration-300 ease-in-out;
+}
+
+.box-top-shadow{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Style the artificial checkbox */
+.custom-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 1.2em;
+  height: 1.2em;
+  border: 2px solid #ccc; /* White border */
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+.custom-checkbox:checked {
+  background-color: #000; /* Black background when checked */
+  border-color: #fff; /* White border when checked */
+}
+
+.custom-checkbox:checked::before {
+  content: '\2713'; /* Checkmark symbol */
+  display: block;
+  text-align: center;
+  line-height: 1em;
+  color: #fff; /* White checkmark */
+}
