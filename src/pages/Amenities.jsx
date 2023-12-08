@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 const Amenities = () => {
 	return (
 		<div>
-			<div className='flex justify-center bg--400 '>
+			<div className='flex justify-center bg--400 border border-slate-200'>
 				<div className='relative'>
 					<div className='flex justify-around gap-6 '>
 						<button className='absolute left-[20px] top-6'>
@@ -14,8 +14,8 @@ const Amenities = () => {
 								<FaXmark />
 							</Link>
 						</button>
-						<h1 className='p-4 text-2xl font-bold pl-24 invisible'>Amenities</h1>
-						<div className='flex items-center justify-end gap-6 ml-8'>
+						<h1 className='p-4 text-2xl font-bold pl-20 invisible'>Amenities</h1>
+						<div className='flex items-center justify-end gap-6 ml-8 '>
 							<span>
 								<IoMdDownload style={{ fontSize: "2rem" }} />
 							</span>
@@ -26,6 +26,7 @@ const Amenities = () => {
 					</div>
 				</div>
 			</div>
+
 			<ul className='space-y-2 text-lg px-12 py-8'>
 				<li>Swimming Pool</li>
 				<li>Concierge Service</li>
