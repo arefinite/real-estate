@@ -3,7 +3,7 @@ import { IoMdDownload } from "react-icons/io"
 import { IoIosShareAlt } from "react-icons/io"
 import { Link } from "react-router-dom"
 
-const Amenities = () => {
+const LightBox = () => {
 	return (
 		<div>
 			<div className='flex justify-center bg--400 '>
@@ -14,7 +14,7 @@ const Amenities = () => {
 								<FaXmark />
 							</Link>
 						</button>
-						<h1 className='p-4 text-2xl font-bold pl-24 invisible'>Amenities</h1>
+						<h1 className='p-4 text-2xl font-bold pl-24 invisible'></h1>
 						<div className='flex items-center justify-end gap-6 ml-8'>
 							<span>
 								<IoMdDownload style={{ fontSize: "2rem" }} />
@@ -26,28 +26,34 @@ const Amenities = () => {
 					</div>
 				</div>
 			</div>
-			<ul className='space-y-2 text-lg px-12 py-8'>
-				<li>Swimming Pool</li>
-				<li>Concierge Service</li>
-				<li>Gymnasium</li>
-				<li>High-Speed Internet</li>
-				<li>Jacuzzi</li>
-				<li>Kids Club</li>
-				<li>Meeting Room</li>
-				<li>Restaurant</li>
-				<li>Sauna</li>
-				<li>Standard Pool</li>
-				<li>Steam Room</li>
-				<li>Video Security</li>
-				<li>Meeting Room</li>
-				<li>Restaurant</li>
-				<li>Sauna</li>
-				<li>Standard Pool</li>
-				<li>Steam Room</li>
-				<li>Video Security</li>
-			</ul>
+			{/* ----- */}
+			<div className="space-y-4">
+				<img
+					className='w-full h-96 object-cover'
+					src='./images/location1.jpg'
+					alt=''
+				/>
+
+				<img
+					className='w-full h-96 object-cover'
+					src='./images/location2.jpg'
+					alt=''
+				/>
+
+				<img
+					className='w-full h-96 object-cover'
+					src='./images/location3.jpg'
+					alt=''
+				/>
+
+				<img
+					className='w-full h-96 object-cover'
+					src='./images/location4.jpg'
+					alt=''
+				/>
+			</div>
 		</div>
 	)
 }
 
-export default Amenities
+export default LightBox

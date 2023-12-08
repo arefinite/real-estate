@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom"
 import RootLayout from "../layouts/RootLayout"
-import { Blogs, Error, Home, Map, Search, Navigation, ProjectDetails, DubaiDevelopers, DubaiDeveloper, Amenities, RegisterInterest, DubaiArea, DubaiAreasAll } from "../pages"
+import { Blogs, Error, Home, Map, Search, Navigation, ProjectDetails, DubaiDevelopers, DubaiDeveloper, Amenities, RegisterInterest, DubaiArea, DubaiAreasAll, LightBox } from "../pages"
 
 
 
@@ -58,6 +58,9 @@ export const appRouter = createBrowserRouter([
       {
         path: 'dubai-area',
         element: <DubaiArea/>
+      }, {
+        path: 'lightbox',
+        element: <LightBox/>
       }
     ]
   }

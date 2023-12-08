@@ -65,11 +65,13 @@ const ProjectDetails = () => {
 					{/* <img className='w-full max-h-52 object-cover' src={house.photoUrl} alt={house.name}/> */}
 					<Swiper pagination={true} modules={[Pagination]} className='mySwiper'>
 						<SwiperSlide>
-							<img
-								className='w-full h-96 object-cover'
-								src='./images/location2.jpg'
-								alt=''
-							/>
+							<Link to='/lightbox'>
+								<img
+									className='w-full h-96 object-cover'
+									src='./images/location2.jpg'
+									alt=''
+								/>
+							</Link>
 						</SwiperSlide>
 						<SwiperSlide>
 							<img
@@ -212,9 +214,7 @@ const ProjectDetails = () => {
 				<hr className='my-4' />
 				<div>
 					<div>
-						<h1 className='heading py-2 my-4'>
-							About Location Business Bay
-						</h1>
+						<h1 className='heading py-2 my-4'>About Location Business Bay</h1>
 						<div style={{ margin: "0 -16px" }}>
 							<img src='./images/img1.jpg' alt='' />
 						</div>
@@ -235,7 +235,7 @@ const ProjectDetails = () => {
 						debitis iure enim at laboriosam maxime ipsum adipisci dignissimos
 						voluptatem?
 					</p>
-					<img src="/public/images/single-dev.png" className="my-4" alt="" />
+					<img src='/public/images/single-dev.png' className='my-4' alt='' />
 				</div>
 				<div>
 					<h1 className=' py-2 my-4 heading'>Similar Properties</h1>
