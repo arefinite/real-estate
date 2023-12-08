@@ -30,23 +30,24 @@ const ProjectDetails = () => {
 	}, [])
 	return (
 		<div>
-			<div className='p-4 mb-20'>
-				<div className='mb-2 flex justify-between'>
-					<Link to='/'>
-						<span className='flex gap-2 items-center text-lg'>
-							<IoIosArrowBack /> <strong>Back</strong>
-						</span>
-					</Link>
-					<span className='flex gap-5 items-center text-xl'>
-						<span>
-							<IoMdDownload style={{ fontSize: "2rem" }} />
-						</span>
-						<span>
-							<IoIosShareAlt style={{ fontSize: "2rem" }} />
-						</span>
+			<div className='flex justify-between items-center h-[7vh] px-2 pt-2  z-50 bg-white sticky top-0'>
+				<Link to='/'>
+					<span className='flex gap-2 items-center text-lg  '>
+						<IoIosArrowBack /> <strong>Back</strong>
 					</span>
-				</div>
-				<hr className='w-full my-2' />
+				</Link>
+				<span className='flex gap-5 items-center text-xl'>
+					<span>
+						<IoMdDownload style={{ fontSize: "2rem" }} />
+					</span>
+					<span>
+						<IoIosShareAlt style={{ fontSize: "2rem" }} />
+					</span>
+				</span>
+			</div>
+
+			<hr className='w-full my-2' />
+			<div className='px-4 mb-20'>
 				<span className='text-stone-500'>
 					<small>
 						<Link to='/'>Home</Link>/ Dubai Apartments For Sale{" "}
@@ -120,7 +121,7 @@ const ProjectDetails = () => {
 					</Link>
 				</div>
 				<hr className='my-4' />
-				<h1 className='text-2xl font-bold py-2 mt-2'>Floor Plan:</h1>
+				<h1 className='heading py-2 mt-2'>Floor Plan:</h1>
 				<div className='my-4'>
 					<Swiper
 						slidesPerView={"3"}
@@ -147,7 +148,7 @@ const ProjectDetails = () => {
 					Request Units Availability
 				</button>
 				<hr className='my-4 ' />
-				<h1 className='text-2xl font-bold py-2 mt-2'>Payment Plan</h1>
+				<h1 className='heading py-2 mt-2'>Payment Plan</h1>
 				<div className='flex justify-center flex-col space-y-5'>
 					<div className='border p-4'>
 						<span className='font-bold text-2xl pl-8 pr-2'>10%</span>
@@ -169,7 +170,7 @@ const ProjectDetails = () => {
 					</button>
 				</Link>
 				<div>
-					<h1 className='text-2xl py-2 my-4 font-bold'>Nearby Locations</h1>
+					<h1 className='heading py-2 my-4 '>Nearby Locations</h1>
 					<ul className='space-y-2'>
 						<li>
 							<span className='flex gap-2 items-center'>
@@ -211,7 +212,7 @@ const ProjectDetails = () => {
 				<hr className='my-4' />
 				<div>
 					<div>
-						<h1 className='text-2xl py-2 my-4 font-bold'>
+						<h1 className='heading py-2 my-4'>
 							About Location Business Bay
 						</h1>
 						<div style={{ margin: "0 -16px" }}>
@@ -227,16 +228,17 @@ const ProjectDetails = () => {
 				</div>
 				<hr className='my-4' />
 				<div>
-					<h1 className='text-2xl py-2 my-4 font-bold'>Developed By Omniyat</h1>
+					<h1 className=' py-2 my-4 heading'>Developed By Omniyat</h1>
 					<img src='' alt='' />
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. In odio
 						debitis iure enim at laboriosam maxime ipsum adipisci dignissimos
 						voluptatem?
 					</p>
+					<img src="/public/images/single-dev.png" className="my-4" alt="" />
 				</div>
 				<div>
-					<h1 className='text-2xl py-2 my-4 font-bold'>Similar Properties</h1>
+					<h1 className=' py-2 my-4 heading'>Similar Properties</h1>
 					<div style={{ margin: "0 -16px" }}>
 						<LatestProjectsSlider />
 					</div>

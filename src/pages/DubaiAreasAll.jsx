@@ -23,20 +23,22 @@ const DubaiAreasAll = () => {
 	}, [])
 	return (
 		<div>
-			<div className='p-4 mb-20'>
-				<div className='mb-2 flex justify-between'>
-					<Link to='/'>
-						<span className='flex gap-2 items-center text-lg'>
-							<IoIosArrowBack /> <strong>Back</strong>
-						</span>
-					</Link>
-					<span className='flex gap-5 items-center text-xl'>
-						<span>
-							<IoIosShareAlt style={{ fontSize: "2rem" }} />
-						</span>
+			<div className='flex justify-between items-center h-[7vh] px-2 pt-2  z-50 bg-white sticky top-0'>
+				<Link to='/'>
+					<span className='flex gap-2 items-center text-lg  '>
+						<IoIosArrowBack /> <strong>Back</strong>
 					</span>
-				</div>
-				<hr className='w-full my-2' />
+				</Link>
+				<span className='flex gap-5 items-center text-xl'>
+				
+					<span>
+						<IoIosShareAlt style={{ fontSize: "2rem" }} />
+					</span>
+				</span>
+			</div>
+
+			<hr className='w-full my-2' />
+			<div className='px-4 mb-20'>
 				<span className='text-stone-500'>
 					<small>
 						<Link to='/'>Home</Link>/ Dubai Apartments For Sale{" "}
@@ -239,8 +241,8 @@ const DubaiAreasAll = () => {
 			</div>
 
 			<div className='-mt-8 '>
-        <Footer />
-        <BottomNavigation/>
+				<Footer />
+				<BottomNavigation />
 			</div>
 		</div>
 	)
