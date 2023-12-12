@@ -11,9 +11,9 @@ const Search = () => {
 
 	return (
 		<div>
-			<div className='flex justify-center '>
+			<div className='flex'>
 				<div className='relative'>
-					<div className='sticky top-0 bg-white z-50 h-[8vh] border-b'>
+					<div className='sticky top-0 bg-white z-50 h-[7vh] border border-b'>
 						<div className='flex justify-center gap-6 '>
 							<button className='absolute left-10 top-6'>
 								<Link to='/'>
@@ -25,22 +25,22 @@ const Search = () => {
 					</div>
 					<hr className='w-screen' />
 
-					<div className='mt-8 flex justify-center text-lg mr-2'>
+					<div className='mt-8 flex justify-center text-lg w-full'>
 						<form
 							onSubmit={e => e.preventDefault()}
 							className='flex flex-col gap-8'
 						>
-							<div className='flex flex-col gap-2'>
+							<div className='flex flex-col gap-3'>
 								<label htmlFor='area' className='font-bold tracking-wide'>
 									Area/Project
 								</label>
 								<input
 									type='text'
-									className='p-2 px-4 border border-slate-300 w-80 outline-none'
+									className='py-2 px-4 border border-slate-300 w-full outline-none'
 								/>
 							</div>
 							<div>
-								<label htmlFor='type' className='font-bold tracking-wide'>
+								<label htmlFor='type' className='font-bold tracking-wide '>
 									Project Type
 								</label>
 								<div className='flex flex-col mt-2 gap-2 '>
@@ -90,19 +90,19 @@ const Search = () => {
 								<label htmlFor='develop' className='font-bold tracking-wide'>
 									Developer
 								</label>
-								<select className='p-2 pr-4 border border-slate-300 w-80 outline-none '>
+								<select className='p-2 pr-4 border border-slate-300 w-full outline-none '>
 									<option value=''>Please Select</option>
 									<option value=''>Develope One</option>
 									<option value=''>Developer Two</option>
 								</select>
 							</div>
 							<div className='flex flex-col gap-2'>
-								<label htmlFor='Price' className='font-bold tracking-wide'>
+								<label htmlFor='Price' className='font-bold tracking-wide '>
 									Price Range
 								</label>
 								{/* Start................................................................................................................. */}
 
-								<div className='w-80 mt-4 outline-none'>
+								<div className='w-full mt-4 outline-none'>
 									<Range
 										step={1}
 										min={100000}
@@ -140,44 +140,42 @@ const Search = () => {
 										<span>${range[1]}</span>
 									</div>
 								</div>
-
-								
 							</div>
-							<div className='flex w-80 gap-3'>
+							<div className='flex w-full gap-3'>
 								<div>
 									<input
 										type='number'
 										placeholder='Min Price'
-										className='p-2 border border-slate-300 w-[155px]   outline-none'
+										className='p-2 border border-slate-300 w-[175px]   outline-none'
 									/>
 								</div>
 								<div>
 									<input
 										type='number'
 										placeholder='Max Price'
-										className='p-2 border border-slate-300  w-[155px] outline-none'
+										className='p-2 border border-slate-300  w-[175px] outline-none'
 									/>
 								</div>
 							</div>
 							<div>
 								<h1 className='font-bold tracking-wide'>Lifestyle</h1>
-								<div className='grid grid-cols-2 gap-4 pb-10 w-80 mt-4'>
-									<div className='p-2 border border-slate-300 rounded-full w-[155px]  text-center outline-none hover:bg-black  hover:text-white'>
+								<div className='grid grid-cols-2 gap-4 pb-10 w-full mt-4'>
+									<div className='p-2 border border-slate-300 rounded-full w-[175px]  text-center outline-none hover:bg-black  hover:text-white'>
 										Beachfront
 									</div>
-									<div className='p-2 border border-slate-300 rounded-full w-[155px]  text-center outline-none hover:bg-black hover:text-white'>
+									<div className='p-2 border border-slate-300 rounded-full w-[175px]  text-center outline-none hover:bg-black hover:text-white'>
 										Luxury Living
 									</div>
-									<div className='p-2 border border-slate-300 rounded-full w-[155px]  text-center outline-none hover:bg-black hover:text-white'>
+									<div className='p-2 border border-slate-300 rounded-full w-[175px]  text-center outline-none hover:bg-black hover:text-white'>
 										Waterfront
 									</div>
-									<div className='p-2 border border-slate-300 rounded-full w-[155px]  text-center outline-none hover:bg-black hover:text-white'>
+									<div className='p-2 border border-slate-300 rounded-full w-[175px]  text-center outline-none hover:bg-black hover:text-white'>
 										Near Golf
 									</div>
-									<div className='p-2 border border-slate-300 rounded-full w-[155px]  text-center outline-none hover:bg-black hover:text-white'>
+									<div className='p-2 border border-slate-300 rounded-full w-[175px]  text-center outline-none hover:bg-black hover:text-white'>
 										Near Burj Khalifa
 									</div>
-									<div className='p-2 border border-slate-300 rounded-full w-[155px]  text-center outline-none hover:bg-black hover:text-white'>
+									<div className='p-2 border border-slate-300 rounded-full w-[175px]  text-center outline-none hover:bg-black hover:text-white'>
 										Near Expo Dubai
 									</div>
 								</div>

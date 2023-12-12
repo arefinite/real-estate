@@ -16,12 +16,12 @@ import Footer from "../components/shared/Footer.jsx/Footer"
 import RegisterInt from "../components/ProjectDetails/RegisterInt"
 
 const buttons = [
-	"Apartment",
-	"Villa",
-	"Penthouse",
-	"Townhouse",
-	"Land Plots",
-	"House",
+	"Studio",
+	"2 Bedroom",
+	"3 Balcony",
+	"1 Kitchen",
+	"1 Living",
+	"1 Dining",
 ]
 
 const ProjectDetails = () => {
@@ -30,7 +30,7 @@ const ProjectDetails = () => {
 	}, [])
 	return (
 		<div>
-			<div className='flex justify-between items-center h-[7vh] px-2 pt-2  z-50 bg-white sticky top-0'>
+			<div className='flex justify-between items-center h-[7vh] px-2 pt-2  z-50 bg-white sticky border-b  top-0'>
 				<Link to='/'>
 					<span className='flex gap-2 items-center text-lg  '>
 						<IoIosArrowBack /> <strong>Back</strong>
@@ -46,8 +46,8 @@ const ProjectDetails = () => {
 				</span>
 			</div>
 
-			<hr className='w-full my-2' />
-			<div className='px-4 mb-20'>
+		
+			<div className='px-4 mt-4 mb-20'>
 				<span className='text-stone-500'>
 					<small>
 						<Link to='/'>Home</Link>/ Dubai Apartments For Sale{" "}
@@ -56,7 +56,7 @@ const ProjectDetails = () => {
 				<h1 className='heading pt-4'>
 					Bugatti Branded Ultra-Luxury Residences in Business Bay
 				</h1>
-				<div className='flex justify-between pb-4 pt-2 font-semibold text-sm'>
+				<div className='flex justify-between pb-4 pt-2 font-bold text-sm'>
 					<span>Business Bay</span>
 					<span className='text-stone-400 underline'>View Map</span>
 				</div>
@@ -108,6 +108,7 @@ const ProjectDetails = () => {
 						placeat!
 					</p>
 				</div>
+				<hr className='my-4' />
 				<div>
 					<h1 className='heading py-2 mt-2'>Amenities</h1>
 					<ul className='space-y-2'>
@@ -177,35 +178,35 @@ const ProjectDetails = () => {
 						<li>
 							<span className='flex gap-2 items-center'>
 								<FaRegCheckCircle />
-								<span className='text-slate-500 font-bold'>5 Minutes</span>to
+								<span className=' font-bold'>5 Minutes</span>to
 								Burj Khalifa Downtown
 							</span>
 						</li>
 						<li>
 							<span className='flex gap-2 items-center'>
 								<FaRegCheckCircle />
-								<span className='text-slate-500 font-bold'>10 Minutes</span>to
+								<span className=' font-bold'>10 Minutes</span>to
 								Palm Jumeirah
 							</span>
 						</li>
 						<li>
 							<span className='flex gap-2 items-center'>
 								<FaRegCheckCircle />
-								<span className='text-slate-500 font-bold'>10 Minutes</span> to
+								<span className=' font-bold'>10 Minutes</span> to
 								Burj Al Arab
 							</span>
 						</li>
 						<li>
 							<span className='flex gap-2 items-center'>
 								<FaRegCheckCircle />
-								<span className='text-slate-500 font-bold'>10 Minutes</span>to
+								<span className='font-bold'>10 Minutes</span>to
 								DXB Intl Airport
 							</span>
 						</li>
 						<li>
 							<span className='flex gap-2 items-center'>
 								<FaRegCheckCircle />
-								<span className='text-slate-500 font-bold'>30 Minutes</span> to
+								<span className=' font-bold'>30 Minutes</span> to
 								Dubai Marina
 							</span>
 						</li>

@@ -1,19 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
 	color: #3a3a3a;
+  font-size: 0.9375rem;
+  font-weight: 300;
 }
 
 h1 {
 	padding-bottom: 0.5rem;
+  font-weight: 400;
 }
 
 .heading {
- @apply text-lg font-bold
+ @apply text-[1.125rem]  font-[400]
 }
+
+
 
 .box-container {
 	@apply container p-4;
@@ -24,7 +29,7 @@ h1 {
 }
 
 .nav-item {
-	@apply text-base font-bold;
+	@apply text-[0.9375rem] ;
 }
 
 .dropdown {

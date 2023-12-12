@@ -12,7 +12,7 @@ const AccordionItem = ({ title, content }) => {
 	return (
 		<div className='py-4'>
 			<div className='flex justify-between items-center' onClick={handleToggle}>
-				<h1 className='text-bose h-10 py-2 font-semibold'>{title}</h1>
+				<h1 className='text-bose h-10 py-2 '>{title}</h1>
 				<span>
 					{isOpen ? (
 						<FaAngleUp className='text-xl' />

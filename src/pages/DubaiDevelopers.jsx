@@ -21,12 +21,65 @@ const DubaiDevelopers = () => {
 						porro!
 					</p>
 					<div className='my-6'>
-						<Link to='/dubai-developer'>
+						{/* <div className='flex gap-4'>
+							<img src='./images/omniyat-logo.png' alt='' className='w-1/3' />
+							<img src='./images/omniyat-logo.png' alt='' className='w-1/3' />
+						</div> */}
+						<div className='flex gap-2 '>
+							<div className='w-1/2 p-4 border h-24 flex items-center'>
+								<Link to='/dubai-developer'>
+									<img src='./images/omniyat-logo.png' alt='logo' />
+								</Link>
+							</div>
+							<div className='w-1/2 p-4 border h-24 flex items-center'>
+								<Link to='/dubai-developer'>
+									<img src='./images/emaar-logo.png' alt='logo' />
+								</Link>
+							</div>
+						</div>
+						<div className='flex gap-2 mt-4'>
+							<div className='w-1/2 p-4 border  h-24 flex items-center'>
+								<Link to='/dubai-developer'>
+									<img src='./images/damac-logo.png' alt='logo' />
+								</Link>
+							</div>
+							<div className='w-1/2 p-4 border  h-24 flex items-center'>
+								<Link to='/dubai-developer'>
+									<img src='./images/meraas-logo.png' alt='logo' />
+								</Link>
+							</div>
+						</div>
+						<div className='flex gap-2 '>
+							<div className='w-1/2 p-4 border h-24 flex items-center'>
+								<Link to='/dubai-developer'>
+									<img src='./images/omniyat-logo.png' alt='logo' />
+								</Link>
+							</div>
+							<div className='w-1/2 p-4 border h-24 flex items-center'>
+								<Link to='/dubai-developer'>
+									<img src='./images/emaar-logo.png' alt='logo' />
+								</Link>
+							</div>
+						</div>
+						<div className='flex gap-2 mt-4'>
+							<div className='w-1/2 p-4 border  h-24 flex items-center'>
+								<Link to='/dubai-developer'>
+									<img src='./images/damac-logo.png' alt='logo' />
+								</Link>
+							</div>
+							<div className='w-1/2 p-4 border  h-24 flex items-center'>
+								<Link to='/dubai-developer'>
+									<img src='./images/meraas-logo.png' alt='logo' />
+								</Link>
+							</div>
+						</div>
+
+						{/* <Link to='/dubai-developer'>
 							<img src='./images/dev.png' className='w-full h-72' alt='' />
 							<img src='./images/dev.png' className='w-full h-72' alt='' />
 							<img src='./images/dev.png' className='w-full h-72' alt='' />
 							<img src='./images/dev.png' className='w-full h-72' alt='' />
-						</Link>
+						</Link> */}
 					</div>
 				</div>
 			</div>

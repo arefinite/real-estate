@@ -6,6 +6,10 @@ export default {
 			sans: ["Poppins", "sans-serif"],
 		},
 		extend: {
+			fontWeight: {
+				'bold': 400,
+				'semi-bold': 400,
+			},
 			fontFamily: {
 				merri: ["Merriweather", "serif"],
 			},

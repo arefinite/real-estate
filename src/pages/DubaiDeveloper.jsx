@@ -19,7 +19,7 @@ const DubaiDeveloper = () => {
 					</span>
 					<div>
 						<h1 className='text-2xl py-2 my-2 font-bold'>Dubai Developers</h1>
-						<img src='/public/images/single-dev.png' className='py-4' alt='' />
+						<img src='/images/single-dev.png' className='py-4' alt='' />
 						<p>
 							Lorem ipsum dolor, sit amet consectetur adipisicing elit.
 							Repudiandae ducimus id fuga maiores tempora expedita cupiditate

@@ -1,9 +1,30 @@
 import { Link } from "react-router-dom"
 import BottomNavigation from './../components/shared/BottomNavigation';
+import { FaXmark } from "react-icons/fa6"
+import { IoIosShareAlt } from "react-icons/io"
 
 const Blogs = () => {
 	return (
 		<div>
+			<div className='flex justify-center sticky top-0 bg-white border border-slate-200'>
+				<div className=''>
+					<div className='flex justify-between'>
+						<button className='absolute left-4 top-6'>
+							<Link to='/'>
+								<FaXmark />
+							</Link>
+						</button>
+						<h1 className='p-4 text-2xl font-bold pl-20 invisible'>
+							Blog
+						</h1>
+						<div className='flex items-center absolute right-4 top-4 ml-8 '>
+							<span>
+								<IoIosShareAlt style={{ fontSize: "2rem" }} />
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div className='box-container mb-20'>
 				<span className='text-stone-500'>
 					<small>

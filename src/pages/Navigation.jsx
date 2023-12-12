@@ -17,15 +17,15 @@ const Navigation = () => {
 						<FaXmark />
 					</Link>
 				</button>
-				<h1 className='p-4 text-2xl font-bold'>Menu</h1>
+				<h1 className='p-4 heading '>Menu</h1>
 			</div>
 			<hr className='w-screen' />
-			<div className='px-10 space-y-3 text-stone-700'>
-				<h1 className='mt-12 text-base font-bold'>
+			<div className='px-10 space-y-2 text-stone-700'>
+				<h1 className='mt-12 text-base'>
 					<span>Latest Projects</span>
 				</h1>
 
-				<h1 className='text-base font-semibold'>
+				<h1 className='text-base'>
 					<span>Luxury Projects</span>
 				</h1>
 
@@ -40,7 +40,7 @@ const Navigation = () => {
 					</span>
 				</h1>
 				{show1 && (
-					<div className='dropdown'>
+					<div className='dropdown pb-3'>
 						<ul className='text-base leading-10'>
 							<li>Luxury Projects</li>
 							<li>Apartments</li>
@@ -63,7 +63,7 @@ const Navigation = () => {
 				</h1>
 				{show2 && (
 					<div className='dropdown'>
-						<ul className='text-base leading-10'>
+						<ul className='text-base leading-10 pb-3'>
 							<li>Palm Jumeirah</li>
 							<li>Downtown Dubai</li>
 							<li>Dubai Hills Estate</li>
@@ -88,7 +88,7 @@ const Navigation = () => {
 				</h1>
 				{show3 && (
 					<div className='dropdown'>
-						<ul className='text-base leading-10'>
+						<ul className='text-base leading-10 pb-3'>
 							<li>Why Dubai</li>
 							<li>Invest in Dubai Real Estate</li>
 							<li>Dubai Fact Numbers</li>

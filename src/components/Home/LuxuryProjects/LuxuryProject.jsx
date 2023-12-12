@@ -12,7 +12,7 @@ const LuxuryProject = ({ house }) => {
 				<Swiper pagination={true} modules={[Pagination]} className='mySwiper'>
 					<SwiperSlide onClick={() => navigate("/project-details")}>
 						<img
-							className='w-full max-h-52 object-cover'
+							className='w-full h-72 object-cover'
 							src='./images/location2.jpg'
 							alt={house.name}
 						/>
