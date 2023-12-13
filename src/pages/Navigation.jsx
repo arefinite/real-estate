@@ -22,11 +22,15 @@ const Navigation = () => {
 			<hr className='w-screen' />
 			<div className='px-10 space-y-2 text-stone-700'>
 				<h1 className='mt-12 text-base'>
-					<span>Latest Projects</span>
+					<Link to='/project-details'>
+						<span>Latest Projects</span>
+					</Link>
 				</h1>
 
 				<h1 className='text-base'>
-					<span>Luxury Projects</span>
+					<Link to='/project-details'>
+						<span>Luxury Projects</span>
+					</Link>
 				</h1>
 
 				<h1 className='nav-item' onClick={() => setShow1(prev => !prev)}>
@@ -42,12 +46,24 @@ const Navigation = () => {
 				{show1 && (
 					<div className='dropdown pb-3'>
 						<ul className='text-base leading-10'>
-							<li>Luxury Projects</li>
-							<li>Apartments</li>
-							<li>Vila</li>
-							<li>Penthouse</li>
-							<li>Townhouse</li>
-							<li>Land Plots</li>
+							<Link to='/project-details'>
+								<li>Luxury Projects</li>
+							</Link>
+							<Link to='/project-details'>
+								<li>Apartments</li>
+							</Link>
+							<Link to='/project-details'>
+								<li>Vila</li>
+							</Link>
+							<Link to='/project-details'>
+								<li>Penthouse</li>
+							</Link>
+							<Link to='/project-details'>
+								<li>Townhouse</li>
+							</Link>
+							<Link to='/project-details'>
+								<li>Land Plots</li>
+							</Link>
 						</ul>
 					</div>
 				)}
@@ -64,12 +80,22 @@ const Navigation = () => {
 				{show2 && (
 					<div className='dropdown'>
 						<ul className='text-base leading-10 pb-3'>
-							<li>Palm Jumeirah</li>
-							<li>Downtown Dubai</li>
-							<li>Dubai Hills Estate</li>
-							<li>Dubai Creek Harbour</li>
-							<li>Business Bay</li>
-							<Link to='/dubai-areas'>
+							<Link to='/dubai-area'>
+								<li>Palm Jumeirah</li>
+							</Link>
+							<Link to='/dubai-area'>
+								<li>Downtown Dubai</li>
+							</Link>
+							<Link to='/dubai-area'>
+								<li>Dubai Hills Estate</li>
+							</Link>
+							<Link to='/dubai-area'>
+								<li>Dubai Creek Harbour</li>
+							</Link>
+							<Link to='/dubai-area'>
+								<li>Business Bay</li>
+							</Link>
+							<Link to='/dubai-area'>
 								<li>View All</li>
 							</Link>
 						</ul>
@@ -102,7 +128,6 @@ const Navigation = () => {
 
 				<h1 className='nav-item'>
 					<Link to='/dubai-developers'>
-						{" "}
 						<span className='flex items-center gap-2'>Dubai Developers</span>
 					</Link>
 				</h1>
@@ -114,15 +139,21 @@ const Navigation = () => {
 				</h1>
 
 				<h1 className=' nav-item'>
-					<span className='flex items-center gap-2'>Sell Your Property</span>
+					<Link to='/sell'>
+						<span className='flex items-center gap-2'>Sell Your Property</span>
+					</Link>
 				</h1>
 
 				<h1 className=' nav-item'>
-					<span className='flex items-center gap-2'>About Us</span>
+					<Link to='/about'>
+						<span className='flex items-center gap-2'>About Us</span>
+					</Link>
 				</h1>
 
 				<h1 className=' nav-item'>
-					<span className='flex items-center gap-2'>Contact Us</span>
+					<Link to='/contact'>
+						<span className='flex items-center gap-2'>Contact Us</span>
+					</Link>
 				</h1>
 			</div>
 		</nav>

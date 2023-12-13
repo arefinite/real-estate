@@ -33,12 +33,14 @@ const BottomNavigation = () => {
 					<span className='text-xs'>Map</span>
 				</div>
 			</Link>
-			<div className='flex flex-col text-stone-500 justify-center items-center text-base gap-2'>
-				<span>
-					<img src={MessageIcon} alt='' />
-				</span>
-				<span className='text-xs'>Inquiry</span>
-			</div>
+			<Link to='/inquiry'>
+				<div className='flex flex-col text-stone-500 justify-center items-center text-base gap-2'>
+					<span>
+						<img src={MessageIcon} alt='' />
+					</span>
+					<span className='text-xs'>Inquiry</span>
+				</div>
+			</Link>
 			<Link to='/navigation'>
 				<div className='flex flex-col text-stone-500 justify-center items-center text-base gap-2'>
 					<span>

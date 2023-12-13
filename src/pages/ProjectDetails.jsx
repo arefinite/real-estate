@@ -236,7 +236,7 @@ const ProjectDetails = () => {
 						debitis iure enim at laboriosam maxime ipsum adipisci dignissimos
 						voluptatem?
 					</p>
-					<img src='/public/images/single-dev.png' className='my-4' alt='' />
+					<img src='/images/single-dev.png' className='my-4' alt='' />
 				</div>
 				<div>
 					<h1 className=' py-2 my-4 heading'>Similar Properties</h1>
