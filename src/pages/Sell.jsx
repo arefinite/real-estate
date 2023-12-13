@@ -37,7 +37,7 @@ const Sell = () => {
 							</small>
 						</span>
 					</div>
-					<div className='flex  justify-center'>
+					<div className='flex  justify-center pb-20'>
 						<div>
 							<h1 className=' pb-2 px-6 mt-2 heading'>Sell</h1>
 							<div className='px-6 pb-6'>
