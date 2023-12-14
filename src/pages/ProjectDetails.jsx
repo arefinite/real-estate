@@ -14,6 +14,7 @@ import { useEffect } from "react"
 import LatestProjectsSlider from "../components/Home/LatestProjectsSlider"
 import Footer from "../components/shared/Footer.jsx/Footer"
 import RegisterInt from "../components/ProjectDetails/RegisterInt"
+import { useLocation } from "react-router-dom"
 
 const buttons = [
 	"Studio",
@@ -28,6 +29,7 @@ const ProjectDetails = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0)
 	}, [])
+	const { pathname } = useLocation()
 	return (
 		<div>
 			<div className='flex justify-between items-center h-[7vh] px-2 pt-2  z-50 bg-white sticky border-b  top-0'>
@@ -46,7 +48,6 @@ const ProjectDetails = () => {
 				</span>
 			</div>
 
-		
 			<div className='px-4 mt-4 mb-20'>
 				<span className='text-stone-500'>
 					<small>
@@ -65,7 +66,7 @@ const ProjectDetails = () => {
 					{/* <img className='w-full max-h-52 object-cover' src={house.photoUrl} alt={house.name}/> */}
 					<Swiper pagination={true} modules={[Pagination]} className='mySwiper'>
 						<SwiperSlide>
-							<Link to='/lightbox'>
+							<Link to='/lightbox' state={{ previousPath: pathname }}>
 								<img
 									className='w-full h-96 object-cover'
 									src='./images/location2.jpg'
@@ -74,25 +75,31 @@ const ProjectDetails = () => {
 							</Link>
 						</SwiperSlide>
 						<SwiperSlide>
-							<img
-								className='w-full h-96 object-cover'
-								src='./images/location3.jpg'
-								alt=''
-							/>
+							<Link to='/lightbox' state={{ previousPath: pathname }}>
+								<img
+									className='w-full h-96 object-cover'
+									src='./images/location3.jpg'
+									alt=''
+								/>
+							</Link>
 						</SwiperSlide>
 						<SwiperSlide>
-							<img
-								className='w-full h-96 object-cover'
-								src='./images/location4.jpg'
-								alt=''
-							/>
+							<Link to='/lightbox' state={{ previousPath: pathname }}>
+								<img
+									className='w-full h-96 object-cover'
+									src='./images/location4.jpg'
+									alt=''
+								/>
+							</Link>
 						</SwiperSlide>
 						<SwiperSlide>
-							<img
-								className='w-full h-96 object-cover'
-								src='./images/location1.jpg'
-								alt=''
-							/>
+							<Link to='/lightbox' state={{ previousPath: pathname }}>
+								<img
+									className='w-full h-96 object-cover'
+									src='./images/location1.jpg'
+									alt=''
+								/>
+							</Link>
 						</SwiperSlide>
 					</Swiper>
 				</div>
@@ -178,36 +185,32 @@ const ProjectDetails = () => {
 						<li>
 							<span className='flex gap-2 items-center'>
 								<FaRegCheckCircle />
-								<span className=' font-bold'>5 Minutes</span>to
-								Burj Khalifa Downtown
+								<span className=' font-bold'>5 Minutes</span>to Burj Khalifa
+								Downtown
 							</span>
 						</li>
 						<li>
 							<span className='flex gap-2 items-center'>
 								<FaRegCheckCircle />
-								<span className=' font-bold'>10 Minutes</span>to
-								Palm Jumeirah
+								<span className=' font-bold'>10 Minutes</span>to Palm Jumeirah
 							</span>
 						</li>
 						<li>
 							<span className='flex gap-2 items-center'>
 								<FaRegCheckCircle />
-								<span className=' font-bold'>10 Minutes</span> to
-								Burj Al Arab
+								<span className=' font-bold'>10 Minutes</span> to Burj Al Arab
 							</span>
 						</li>
 						<li>
 							<span className='flex gap-2 items-center'>
 								<FaRegCheckCircle />
-								<span className='font-bold'>10 Minutes</span>to
-								DXB Intl Airport
+								<span className='font-bold'>10 Minutes</span>to DXB Intl Airport
 							</span>
 						</li>
 						<li>
 							<span className='flex gap-2 items-center'>
 								<FaRegCheckCircle />
-								<span className=' font-bold'>30 Minutes</span> to
-								Dubai Marina
+								<span className=' font-bold'>30 Minutes</span> to Dubai Marina
 							</span>
 						</li>
 					</ul>

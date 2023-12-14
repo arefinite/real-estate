@@ -15,6 +15,8 @@ import Footer from "../components/shared/Footer.jsx/Footer"
 import LuxuryProjects from "../components/Home/LuxuryProjects/LuxuryProjects"
 import BottomNavigation from "../components/shared/BottomNavigation"
 
+import { useLocation } from "react-router-dom"
+
 const buttons = [
 	"Apartment",
 	"Villa",
@@ -28,6 +30,7 @@ const DubaiArea = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0)
 	}, [])
+	const { pathname } = useLocation()
 	return (
 		<div>
 			<div className='flex justify-between items-center h-[7vh] px-2 pt-2  z-50 bg-white sticky top-0 '>
@@ -37,7 +40,6 @@ const DubaiArea = () => {
 					</span>
 				</Link>
 				<span className='flex gap-5 items-center text-xl'>
-
 					<span>
 						<IoIosShareAlt style={{ fontSize: "2rem" }} />
 					</span>
@@ -60,32 +62,40 @@ const DubaiArea = () => {
 					{/* <img className='w-full max-h-52 object-cover' src={house.photoUrl} alt={house.name}/> */}
 					<Swiper pagination={true} modules={[Pagination]} className='mySwiper'>
 						<SwiperSlide>
-							<img
-								className='w-full h-96 object-cover'
-								src='./images/location3.jpg'
-								alt=''
-							/>
+							<Link to='/lightbox' state={{ previousPath: pathname }}>
+								<img
+									className='w-full h-96 object-cover'
+									src='./images/location3.jpg'
+									alt=''
+								/>
+							</Link>
 						</SwiperSlide>
 						<SwiperSlide>
-							<img
-								className='w-full h-96 object-cover'
-								src='./images/location3.jpg'
-								alt=''
-							/>
+							<Link to='/lightbox' state={{ previousPath: pathname }}>
+								<img
+									className='w-full h-96 object-cover'
+									src='./images/location3.jpg'
+									alt=''
+								/>
+							</Link>
 						</SwiperSlide>
 						<SwiperSlide>
-							<img
-								className='w-full h-96 object-cover'
-								src='./images/location4.jpg'
-								alt=''
-							/>
+							<Link to='/lightbox' state={{ previousPath: pathname }}>
+								<img
+									className='w-full h-96 object-cover'
+									src='./images/location4.jpg'
+									alt=''
+								/>
+							</Link>
 						</SwiperSlide>
 						<SwiperSlide>
-							<img
-								className='w-full h-96 object-cover'
-								src='./images/location1.jpg'
-								alt=''
-							/>
+							<Link to='/lightbox' state={{ previousPath: pathname }}>
+								<img
+									className='w-full h-96 object-cover'
+									src='./images/location1.jpg'
+									alt=''
+								/>
+							</Link>
 						</SwiperSlide>
 					</Swiper>
 				</div>

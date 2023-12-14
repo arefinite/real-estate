@@ -2,12 +2,24 @@ import { FaXmark } from "react-icons/fa6"
 import { IoMdDownload } from "react-icons/io"
 import { IoIosShareAlt } from "react-icons/io"
 import { Link } from "react-router-dom"
+import { useLocation } from "react-router-dom"
 
 const LightBox = () => {
+	const { state } = useLocation()
+	const prevPath = state.previousPath
+	console.log(prevPath)
 	return (
 		<div>
 			<div className='flex justify-between items-center h-[8vh] px-4 pt-2  z-50 bg-white sticky top-0'>
-				<Link to='/project-details'>
+				<Link
+					to={
+						prevPath === "/project-details"
+							? "/project-details"
+							: prevPath === "/dubai-area"
+							? "/dubai-area"
+							: null
+					}
+				>
 					<span className='flex gap-2 items-center text-lg  '>
 						<FaXmark /> <strong></strong>
 					</span>
