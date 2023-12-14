@@ -3,16 +3,22 @@ import { Link } from "react-router-dom"
 
 const RegisterInterest = () => {
 	return (
-		<div className=''>
-			<div className='flex justify-center bg-400 '>
+		<div>
+			<div className='flex'>
 				<div className='relative'>
-					<div className='flex justify-center gap-6 '>
-						<button className='absolute left-8 top-6'>
-							<Link to='/project-details'>
-								<FaXmark />
-							</Link>
-						</button>
-						<h1 className='p-4 text-2xl font-bold'>Register Interest</h1>
+					<div className='flex justify-center sticky top-0 bg-white border border-slate-200'>
+						<div className=''>
+							<div className='flex justify-between'>
+								<button className='absolute left-4 top-6'>
+									<Link to='/project-details'>
+										<div className='flex items-center'>
+											<FaXmark className='text-2xl' />
+										</div>
+									</Link>
+								</button>
+								<h1 className='p-4 text-2xl font-bold '>Register Interest</h1>
+							</div>
+						</div>
 					</div>
 					<hr className='w-screen' />
 					<div className='flex items-center h-[70vh] justify-center'>
