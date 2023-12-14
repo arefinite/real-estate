@@ -23,7 +23,7 @@ const Search = () => {
 										</div>
 									</Link>
 								</button>
-								<h1 className='p-4 text-2xl font-bold '>Search</h1>
+								<h1 className='p-4 heading '>Search</h1>
 							</div>
 						</div>
 					</div>
