@@ -29,7 +29,7 @@ const About = () => {
 				</div>
 			</div>
 			<div className='box-container mb-20'>
-				<div style={{ margin: "-20px -16px" }}>
+				<div style={{ margin: "-20px -15px" }}>
 					<img src={aboutImg} alt='' />
 				</div>
 				<div className="pt-10 pb-4">

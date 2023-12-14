@@ -18,7 +18,9 @@ h1 {
  @apply text-[1.125rem]  font-[400]
 }
 
-
+input{
+  border-radius: none;
+}
 
 .box-container {
 	@apply container p-4;

@@ -19,21 +19,21 @@ const LuxuryProject = ({ house }) => {
 					</SwiperSlide>
 					<SwiperSlide>
 						<img
-							className='w-full max-h-52 object-cover'
+							className='w-full h-72 object-cover'
 							src='./images/location3.jpg'
 							alt={house.name}
 						/>
 					</SwiperSlide>
 					<SwiperSlide>
 						<img
-							className='w-full max-h-52 object-cover'
+							className='w-full h-72 object-cover'
 							src='./images/location1.jpg'
 							alt={house.name}
 						/>
 					</SwiperSlide>
 					<SwiperSlide>
 						<img
-							className='w-full max-h-52 object-cover'
+							className='w-full h-72 object-cover'
 							src='./images/location4.jpg'
 							alt={house.name}
 						/>

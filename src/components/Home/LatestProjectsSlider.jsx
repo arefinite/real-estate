@@ -19,7 +19,7 @@ const LatestProjectsSlider = () => {
 			>
 				{houseData.map((location, i) => (
 					<SwiperSlide key={i}>
-						<div key={i} className=' w-h-full flex flex-col  pb-4'>
+						<div key={i} className=' w-full h-full flex flex-col  pb-4'>
 							<div className='flex-grow'>
 								<img
 									src={location.photoUrl}
