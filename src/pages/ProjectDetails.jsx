@@ -135,7 +135,7 @@ const ProjectDetails = () => {
 				<div className='my-4'>
 					<Swiper
 						slidesPerView={"3"}
-						spaceBetween={10}
+						spaceBetween={6}
 						modules={[Pagination]}
 						className='mySwiper'
 					>

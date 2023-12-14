@@ -14,7 +14,7 @@ const ScrollProjects = () => {
 		<div className='px-4 pb-8 pt-2'>
 			<Swiper
 				slidesPerView={"3"}
-				spaceBetween={10}
+				spaceBetween={6}
 				modules={[Pagination]}
 				className='mySwiper'
 			>

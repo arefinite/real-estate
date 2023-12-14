@@ -9,7 +9,7 @@ const RegisterInterest = () => {
 					<div className='flex justify-center sticky top-0 bg-white border border-slate-200'>
 						<div className=''>
 							<div className='flex justify-between'>
-								<button className='absolute left-4 top-6'>
+								<button className='absolute left-4 top-5'>
 									<Link to='/project-details'>
 										<div className='flex items-center'>
 											<FaXmark className='text-2xl' />
