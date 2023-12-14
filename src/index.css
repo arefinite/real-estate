@@ -19,7 +19,7 @@ h1 {
 }
 
 input{
-  border-radius: none;
+  border-radius: 0;
 }
 
 .box-container {
