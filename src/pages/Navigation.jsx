@@ -12,7 +12,7 @@ const Navigation = () => {
 	return (
 		<nav>
 			<SecondaryHeader link='/' icon='delete' name='Menu' />
-			<hr className='w-screen' />
+
 			<div className='px-6 space-y-2 text-stone-700'>
 				<h1 className='mt-12 nav-item'>
 					<Link to='/project-details'>
