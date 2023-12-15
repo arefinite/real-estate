@@ -12,7 +12,7 @@ const Navigation = () => {
 	return (
 		<nav>
 			<div className='flex justify-center '>
-				<button className='absolute left-10 top-6'>
+				<button className='absolute left-6 top-6'>
 					<Link to='/'>
 						<FaXmark />
 					</Link>
@@ -20,7 +20,7 @@ const Navigation = () => {
 				<h1 className='p-4 heading '>Menu</h1>
 			</div>
 			<hr className='w-screen' />
-			<div className='px-10 space-y-2 text-stone-700'>
+			<div className='px-6 space-y-2 text-stone-700'>
 				<h1 className='mt-12 nav-item'>
 					<Link to='/project-details'>
 						<span>Latest Projects</span>
