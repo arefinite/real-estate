@@ -21,13 +21,13 @@ const Navigation = () => {
 			</div>
 			<hr className='w-screen' />
 			<div className='px-10 space-y-2 text-stone-700'>
-				<h1 className='mt-12 text-base'>
+				<h1 className='mt-12 nav-item'>
 					<Link to='/project-details'>
 						<span>Latest Projects</span>
 					</Link>
 				</h1>
 
-				<h1 className='text-base'>
+				<h1 className='nav-item'>
 					<Link to='/project-details'>
 						<span>Luxury Projects</span>
 					</Link>
