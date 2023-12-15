@@ -1,37 +1,18 @@
 import { Link } from "react-router-dom"
 import BottomNavigation from './../components/shared/BottomNavigation';
-import { FaXmark } from "react-icons/fa6"
-import { IoIosShareAlt } from "react-icons/io"
+import FixedHeader from "../components/shared/FixedHeader";
 
 const Blogs = () => {
 	return (
 		<div>
-			<div className='flex justify-center sticky top-0 bg-white border border-slate-200'>
-				<div className=''>
-					<div className='flex justify-between'>
-						<button className='absolute left-4 top-6'>
-							<Link to='/'>
-								<FaXmark />
-							</Link>
-						</button>
-						<h1 className='p-4 text-2xl font-bold pl-20 invisible'>
-							Blog
-						</h1>
-						<div className='flex items-center absolute right-4 top-4 ml-8 '>
-							<span>
-								<IoIosShareAlt style={{ fontSize: "2rem" }} />
-							</span>
-						</div>
-					</div>
-				</div>
-			</div>
+		<FixedHeader link='/' icon='delete' share/>
 			<div className='box-container mb-20'>
 				<span className='text-stone-500'>
 					<small>
 						<Link to='/'>Home</Link>/ Dubai Apartments For Sale{" "}
 					</small>
 				</span>
-				<h2 className='font-bold text-2xl my-4'>Blogs</h2>
+				<h2 className='heading my-4'>Blogs</h2>
 				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus
 				rerum molestias soluta voluptas assumenda totam.
 				<div className='flex justify-end mx-2 my-4'>

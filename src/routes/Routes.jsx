@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom"
 import RootLayout from "../layouts/RootLayout"
-import { Blogs, Error, Home, Map, Search,About,Sell,Inquiry,Contact, Navigation, ProjectDetails, DubaiDevelopers, DubaiDeveloper, Amenities, RegisterInterest, DubaiArea, DubaiAreasAll, LightBox } from "../pages"
+import { Blogs, Error, Home, Map, Search,About,Sell,Inquiry,Contact, Navigation, ProjectDetails, DubaiDevelopers, DubaiDeveloper, Amenities, RegisterInterest, DubaiArea, DubaiAreasAll, LightBox, BlogDetails } from "../pages"
 
 
 
@@ -80,6 +80,10 @@ export const appRouter = createBrowserRouter([
 				path: "inquiry",
 				element: <Inquiry />,
 			},
+			{
+				path: 'blog-details',
+				element:<BlogDetails />,
+			}
 		],
 	},
 ])

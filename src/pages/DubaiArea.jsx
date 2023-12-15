@@ -1,6 +1,4 @@
 import { Swiper, SwiperSlide } from "swiper/react"
-import { IoIosShareAlt } from "react-icons/io"
-import { IoIosArrowBack } from "react-icons/io"
 import { FaRegCheckCircle } from "react-icons/fa"
 
 // Import Swiper styles
@@ -16,6 +14,7 @@ import LuxuryProjects from "../components/Home/LuxuryProjects/LuxuryProjects"
 import BottomNavigation from "../components/shared/BottomNavigation"
 
 import { useLocation } from "react-router-dom"
+import FixedHeader from "../components/shared/FixedHeader"
 
 const buttons = [
 	"Apartment",
@@ -33,21 +32,9 @@ const DubaiArea = () => {
 	const { pathname } = useLocation()
 	return (
 		<div>
-			<div className='flex justify-between items-center h-[7vh] px-2 pt-2  z-50 bg-white sticky top-0 '>
-				<Link to='/'>
-					<span className='flex gap-2 items-center text-lg  '>
-						<IoIosArrowBack /> <strong>Back</strong>
-					</span>
-				</Link>
-				<span className='flex gap-5 items-center text-xl'>
-					<span>
-						<IoIosShareAlt style={{ fontSize: "2rem" }} />
-					</span>
-				</span>
-			</div>
+			<FixedHeader link='/dubai-areas' icon='back' text='Back' share />
 
-			<hr className='w-full my-2' />
-			<div className='px-4 mb-20'>
+			<div className='px-4 pt-4 mb-20'>
 				<span className='text-stone-500'>
 					<small>
 						<Link to='/'>Home</Link>/ Dubai Apartments For Sale{" "}
@@ -58,7 +45,7 @@ const DubaiArea = () => {
 					<span>View Map</span>
 				</div>
 				{/* Slider */}
-				<div style={{ margin: "0 -16px" }}>
+				<div style={{ margin: "0 -15px" }}>
 					{/* <img className='w-full max-h-52 object-cover' src={house.photoUrl} alt={house.name}/> */}
 					<Swiper pagination={true} modules={[Pagination]} className='mySwiper'>
 						<SwiperSlide>
@@ -168,8 +155,9 @@ const DubaiArea = () => {
 						))}
 					</Swiper>
 				</div>
-
-				<LuxuryProjects />
+				<div style={{ margin: "0 -15px" }}>
+					<LuxuryProjects />
+				</div>
 			</div>
 
 			<div className='-mt-8 '>

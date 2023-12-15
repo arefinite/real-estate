@@ -1,26 +1,12 @@
-import { FaXmark } from "react-icons/fa6"
-import { Link } from "react-router-dom"
+import SecondaryHeader from "../components/shared/SecondaryHeader"
 
 const RegisterInterest = () => {
 	return (
 		<div>
 			<div className='flex'>
 				<div className='relative'>
-					<div className='flex justify-center sticky top-0 bg-white border border-slate-200'>
-						<div className=''>
-							<div className='flex justify-between'>
-								<button className='absolute left-4 top-5'>
-									<Link to='/project-details'>
-										<div className='flex items-center'>
-											<FaXmark className='text-2xl' />
-										</div>
-									</Link>
-								</button>
-								<h1 className='p-4 heading '>Register Interest</h1>
-							</div>
-						</div>
-					</div>
-					<hr className='w-screen' />
+					<SecondaryHeader link='/project-details' icon='delete' name='Register Interest' />
+					<hr className='w-screen invisible' />
 					<div className='flex items-center h-[70vh] justify-center'>
 						<div>
 							<h1 className='text-center pb-8 mt-12 text-2xl font-bold'>

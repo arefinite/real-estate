@@ -1,6 +1,4 @@
 import { Swiper, SwiperSlide } from "swiper/react"
-import { IoIosShareAlt } from "react-icons/io"
-import { IoIosArrowBack } from "react-icons/io"
 
 // Import Swiper styles
 import "swiper/css"
@@ -14,6 +12,7 @@ import Footer from "../components/shared/Footer.jsx/Footer"
 
 import { CiSearch } from "react-icons/ci"
 import BottomNavigation from './../components/shared/BottomNavigation';
+import FixedHeader from "../components/shared/FixedHeader"
 
 
 
@@ -23,22 +22,8 @@ const DubaiAreasAll = () => {
 	}, [])
 	return (
 		<div>
-			<div className='flex justify-between items-center h-[7vh] px-2 pt-2  z-50 bg-white sticky top-0'>
-				<Link to='/'>
-					<span className='flex gap-2 items-center text-lg  '>
-						<IoIosArrowBack /> <strong>Back</strong>
-					</span>
-				</Link>
-				<span className='flex gap-5 items-center text-xl'>
-				
-					<span>
-						<IoIosShareAlt style={{ fontSize: "2rem" }} />
-					</span>
-				</span>
-			</div>
-
-			<hr className='w-full my-2' />
-			<div className='px-4 mb-20'>
+			<FixedHeader link='/' icon='back' text='Back' share />
+			<div className='px-4 mt-4 mb-20'>
 				<span className='text-stone-500'>
 					<small>
 						<Link to='/'>Home</Link>/ Dubai Apartments For Sale{" "}
@@ -76,7 +61,7 @@ const DubaiAreasAll = () => {
 						<SwiperSlide>
 							<img
 								className='w-full h-96 object-cover'
-								src='./images/location3.jpg'
+								src='./images/location2.jpg'
 								alt=''
 							/>
 						</SwiperSlide>

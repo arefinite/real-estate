@@ -1,7 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react"
-import { IoMdDownload } from "react-icons/io"
-import { IoIosShareAlt } from "react-icons/io"
-import { IoIosArrowBack } from "react-icons/io"
+
 import { FaRegCheckCircle } from "react-icons/fa"
 
 // Import Swiper styles
@@ -15,6 +13,7 @@ import LatestProjectsSlider from "../components/Home/LatestProjectsSlider"
 import Footer from "../components/shared/Footer.jsx/Footer"
 import RegisterInt from "../components/ProjectDetails/RegisterInt"
 import { useLocation } from "react-router-dom"
+import FixedHeader from "../components/shared/FixedHeader"
 
 const buttons = [
 	"Studio",
@@ -32,21 +31,7 @@ const ProjectDetails = () => {
 	const { pathname } = useLocation()
 	return (
 		<div>
-			<div className='flex justify-between items-center h-[7vh] px-2 pt-2  z-50 bg-white sticky border-b  top-0'>
-				<Link to='/'>
-					<span className='flex gap-2 items-center text-lg  '>
-						<IoIosArrowBack /> <strong>Back</strong>
-					</span>
-				</Link>
-				<span className='flex gap-5 items-center text-xl'>
-					<span>
-						<IoMdDownload style={{ fontSize: "2rem" }} />
-					</span>
-					<span>
-						<IoIosShareAlt style={{ fontSize: "2rem" }} />
-					</span>
-				</span>
-			</div>
+				<FixedHeader link='/' icon='back' text='Back' download share/>
 
 			<div className='px-4 mt-4 mb-20'>
 				<span className='text-stone-500'>

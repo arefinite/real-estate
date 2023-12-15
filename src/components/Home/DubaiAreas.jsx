@@ -26,9 +26,9 @@ const locations = [
 	},
 ]
 
-const DubaiAreas = () => {
+const DubaiAreas = ({px='14px'}) => {
 	return (
-		<div className='px-4 h-auto flex'>
+		<div className='h-auto flex' style={{paddingInline: px}}>
 			<Swiper
 				slidesPerView={"1.5"}
 				spaceBetween={0}

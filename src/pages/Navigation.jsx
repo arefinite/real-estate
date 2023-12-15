@@ -2,8 +2,8 @@ import { useState } from "react"
 import { IoIosArrowDown } from "react-icons/io"
 import { IoIosArrowUp } from "react-icons/io"
 
-import { FaXmark } from "react-icons/fa6"
 import { Link } from "react-router-dom"
+import SecondaryHeader from "../components/shared/SecondaryHeader"
 
 const Navigation = () => {
 	const [show1, setShow1] = useState(false)
@@ -11,14 +11,7 @@ const Navigation = () => {
 	const [show3, setShow3] = useState(false)
 	return (
 		<nav>
-			<div className='flex justify-center '>
-				<button className='absolute left-6 top-6'>
-					<Link to='/'>
-						<FaXmark />
-					</Link>
-				</button>
-				<h1 className='p-4 heading '>Menu</h1>
-			</div>
+			<SecondaryHeader link='/' icon='delete' name='Menu' />
 			<hr className='w-screen' />
 			<div className='px-6 space-y-2 text-stone-700'>
 				<h1 className='mt-12 nav-item'>
@@ -95,7 +88,7 @@ const Navigation = () => {
 							<Link to='/dubai-area'>
 								<li>Business Bay</li>
 							</Link>
-							<Link to='/dubai-area'>
+							<Link to='/dubai-areas'>
 								<li>View All</li>
 							</Link>
 						</ul>

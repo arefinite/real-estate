@@ -1,7 +1,7 @@
 import { useState } from "react"
-import { FaXmark } from "react-icons/fa6"
 import { Range } from "react-range"
-import { Link } from "react-router-dom"
+
+import SecondaryHeader from "../components/shared/SecondaryHeader"
 
 const Search = () => {
 	const [range, setRange] = useState([550000, 960000])
@@ -13,21 +13,7 @@ const Search = () => {
 		<div>
 			<div className='flex'>
 				<div className='relative'>
-					<div className='flex justify-center sticky top-0 bg-white border border-slate-200'>
-						<div className=''>
-							<div className='flex justify-between'>
-								<button className='absolute left-4 top-5'>
-									<Link to='/'>
-										<div className='flex items-center'>
-											<FaXmark className='text-2xl' />
-										</div>
-									</Link>
-								</button>
-								<h1 className='p-4 heading '>Search</h1>
-							</div>
-						</div>
-					</div>
-					<hr className='w-screen' />
+					<SecondaryHeader link='/' icon='delete' name='Search' />
 
 					<div className='w-[90%] mx-auto '>
 						<div className='mt-8 flex justify-center text-lg w-full'>

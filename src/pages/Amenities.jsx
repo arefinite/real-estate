@@ -1,33 +1,12 @@
-import { FaXmark } from "react-icons/fa6"
-import { IoMdDownload } from "react-icons/io"
-import { IoIosShareAlt } from "react-icons/io"
-import { Link } from "react-router-dom"
+
+import FixedHeader from "../components/shared/FixedHeader"
 
 const Amenities = () => {
 	return (
 		<div>
-			<div className='flex justify-center bg--400 border border-slate-200'>
-				<div className='relative'>
-					<div className='flex justify-around gap-6 '>
-						<button className='absolute left-[20px] top-6'>
-							<Link to='/project-details'>
-								<FaXmark />
-							</Link>
-						</button>
-						<h1 className='p-4 text-2xl font-bold pl-20 invisible'>Amenities</h1>
-						<div className='flex items-center justify-end gap-6 ml-8 '>
-							<span>
-								<IoMdDownload style={{ fontSize: "2rem" }} />
-							</span>
-							<span>
-								<IoIosShareAlt style={{ fontSize: "2rem" }} />
-							</span>
-						</div>
-					</div>
-				</div>
-			</div>
+			<FixedHeader link='/project-details' icon='delete' download share />
 
-			<ul className='space-y-2 text-lg px-12 py-8'>
+			<ul className='space-y-2 text-lg px-4 py-8'>
 				<li>Swimming Pool</li>
 				<li>Concierge Service</li>
 				<li>Gymnasium</li>

@@ -1,35 +1,14 @@
 
 import { Link } from "react-router-dom"
-import { IoIosArrowBack } from 'react-icons/io';
-import { IoIosShareAlt } from 'react-icons/io';
 import BottomNavigation from "../components/shared/BottomNavigation";
+import FixedHeader from "../components/shared/FixedHeader";
 
 const Sell = () => {
 	return (
 		<div>
 			<div className='flex justify-center bg-400 '>
-				<div className='relative'>
-					<div className='flex justify-center sticky top-0 bg-white border border-slate-200'>
-						<div className=''>
-							<div className='flex justify-between'>
-								<button className='absolute left-4 top-6'>
-									<Link to='/'>
-										<div className='flex items-center gap-1'>
-											<IoIosArrowBack className='text-2xl' />
-											<span>Back</span>
-										</div>
-									</Link>
-								</button>
-								<h1 className='p-4 text-2xl font-bold invisible'>Sell</h1>
-								<div className='flex items-center absolute right-4 top-4 ml-8 '>
-									<span>
-										<IoIosShareAlt style={{ fontSize: "2rem" }} />
-									</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<hr className='w-screen' />
+				<div>
+					<FixedHeader link='/' icon='back' text='Back' share />
 					<div className='p-6'>
 						<span className='text-stone-500 '>
 							<small>
@@ -123,8 +102,8 @@ const Sell = () => {
 						</div>
 					</div>
 				</div>
-      </div>
-      <BottomNavigation />
+			</div>
+			<BottomNavigation />
 		</div>
 	)
 }
