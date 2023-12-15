@@ -1,38 +1,18 @@
+import { useState } from "react"
 import { FaXmark } from "react-icons/fa6"
 import { IoMdDownload } from "react-icons/io"
 import { IoIosShareAlt } from "react-icons/io"
 import { Link } from "react-router-dom"
 import { useLocation } from "react-router-dom"
+import Modal from "../components/shared/Modal"
 
 const LightBox = () => {
+	const [showModal, setShowModal] = useState(false)
 	const { state } = useLocation()
 	const prevPath = state.previousPath
 	console.log(prevPath)
 	return (
 		<div>
-			{/* <div className='flex justify-between items-center h-[8vh] px-4 pt-2  z-50 bg-white sticky top-0'>
-				<Link
-					to={
-						prevPath === "/project-details"
-							? "/project-details"
-							: prevPath === "/dubai-area"
-							? "/dubai-area"
-							: null
-					}
-				>
-					<span className='flex gap-2 items-center text-lg  '>
-						<FaXmark /> <strong></strong>
-					</span>
-				</Link>
-				<span className='flex gap-5 items-center text-xl'>
-					<span>
-						<IoMdDownload style={{ fontSize: "2rem" }} />
-					</span>
-					<span>
-						<IoIosShareAlt style={{ fontSize: "2rem" }} />
-					</span>
-				</span>
-			</div> */}
 			<div className='flex justify-center sticky top-0 bg-white border border-slate-200 z-[50]'>
 				<div>
 					<div className='flex justify-between'>
@@ -57,7 +37,10 @@ const LightBox = () => {
 								<IoMdDownload style={{ fontSize: "2rem" }} />
 							</span>
 							<span>
-								<IoIosShareAlt style={{ fontSize: "2rem" }} />
+								<IoIosShareAlt
+									onClick={() => setShowModal(true)}
+									style={{ fontSize: "2rem" }}
+								/>
 							</span>
 						</div>
 					</div>
@@ -89,6 +72,7 @@ const LightBox = () => {
 					alt=''
 				/>
 			</div>
+			{showModal && <Modal setShowModal={setShowModal} />}
 		</div>
 	)
 }

@@ -7,20 +7,23 @@ import { FaTwitter } from "react-icons/fa"
 
 const Modal = ({setShowModal}) => {
   const modal = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: '300px',
-    backgroundColor: 'white',
-    padding: '20px', 
+		position: "fixed",
+		top: "50%",
+		left: "50%",
+		transform: "translate(-50%, -50%)",
+		width: "300px",
+		backgroundColor: "white",
+		padding: "20px",
     zIndex: 100,
- 
-  }
+    overflow: 'hidden',
+    scroll: false,
+
+	}
   const overlay = {
-    position: 'absolute',
+    position: 'fixed',
     inset: 0,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+
     zIndex:33,
   }
 
