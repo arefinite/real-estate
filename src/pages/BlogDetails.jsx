@@ -4,8 +4,12 @@ import aboutImg from "/images/about.png"
 import DubaiAreas from "../components/Home/DubaiAreas"
 import Footer from "../components/shared/Footer.jsx/Footer"
 import FixedHeader from "../components/shared/FixedHeader"
+import { useEffect } from "react"
 
 const BlogDetails = () => {
+		useEffect(() => {
+			window.scrollTo(0, 0)
+		}, [])
 	return (
 		<div>
 			<FixedHeader link='/blogs' icon='back' text='Back' share />
