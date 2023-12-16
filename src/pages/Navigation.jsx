@@ -15,13 +15,13 @@ const Navigation = () => {
 
 			<div className='px-6 space-y-2 text-stone-700'>
 				<h1 className='mt-12 nav-item'>
-					<Link to='/project-details'>
+					<Link to='/apartments'>
 						<span>Latest Projects</span>
 					</Link>
 				</h1>
 
 				<h1 className='nav-item'>
-					<Link to='/project-details'>
+					<Link to='/apartments'>
 						<span>Luxury Projects</span>
 					</Link>
 				</h1>
@@ -39,22 +39,22 @@ const Navigation = () => {
 				{show1 && (
 					<div className='dropdown pb-3'>
 						<ul className='text-base leading-10'>
-							<Link to='/project-details'>
+							<Link to='/apartments'>
 								<li>Luxury Projects</li>
 							</Link>
-							<Link to='/project-details'>
+							<Link to='/apartments'>
 								<li>Apartments</li>
 							</Link>
-							<Link to='/project-details'>
+							<Link to='/apartments'>
 								<li>Vila</li>
 							</Link>
-							<Link to='/project-details'>
+							<Link to='/apartments'>
 								<li>Penthouse</li>
 							</Link>
-							<Link to='/project-details'>
+							<Link to='/apartments'>
 								<li>Townhouse</li>
 							</Link>
-							<Link to='/project-details'>
+							<Link to='/apartments'>
 								<li>Land Plots</li>
 							</Link>
 						</ul>
@@ -108,13 +108,27 @@ const Navigation = () => {
 				{show3 && (
 					<div className='dropdown'>
 						<ul className='text-base leading-10 pb-3'>
-							<li>Why Dubai</li>
-							<li>Invest in Dubai Real Estate</li>
-							<li>Dubai Fact Numbers</li>
-							<li>GUide To Off Plan</li>
-							<li>Why Invest In Off Plan</li>
-							<li>Guide on Renting</li>
-							<li>Guide to Selling</li>
+							<Link to='/explore'>
+								<li>Why Dubai</li>
+							</Link>
+							<Link to='/explore'>
+								<li>Invest in Dubai Real Estate</li>
+							</Link>
+							<Link to='/explore'>
+								<li>Dubai Fact Numbers</li>
+							</Link>
+							<Link to='/explore'>
+								<li>GUide To Off Plan</li>
+							</Link>
+							<Link to='/explore'>
+								<li>Why Invest In Off Plan</li>
+							</Link>
+							<Link to='/explore'>
+								<li>Guide on Renting</li>
+							</Link>
+							<Link to='/explore'>
+								<li>Guide to Selling</li>
+							</Link>
 						</ul>
 					</div>
 				)}

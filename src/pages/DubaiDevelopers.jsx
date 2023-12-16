@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom"
 
 import BottomNavigation from "../components/shared/BottomNavigation"
-import TopSearchBar from "../components/Home/TopSearchBar"
+import FixedHeader from "../components/shared/FixedHeader"
 
 const DubaiDevelopers = () => {
 	return (
 		<div>
-			<TopSearchBar />
-			<div className='px-6 my-2 pb-20'>
+			<FixedHeader link='/' icon='back' text='Back' share />
+			<div className='px-6 my-4 pb-20'>
 				<span>
 					<small>
 						<Link to='/'>Home</Link>/ Dubai Apartments For Sale
