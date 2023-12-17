@@ -19,13 +19,13 @@ const Navigation = () => {
 
 			<div className='px-6 space-y-2 text-stone-700'>
 				<h1 className='mt-12 nav-item'>
-					<Link to='/apartments'>
+					<Link to='/latest-projects'>
 						<span>Latest Projects</span>
 					</Link>
 				</h1>
 
 				<h1 className='nav-item'>
-					<Link to='/apartments'>
+					<Link to='/luxury-projects'>
 						<span>Luxury Projects</span>
 					</Link>
 				</h1>
@@ -43,7 +43,7 @@ const Navigation = () => {
 				{show1 && (
 					<div className='dropdown pb-3'>
 						<ul className='text-base leading-10'>
-							<Link to='/apartments'>
+							<Link to='/luxury-projects'>
 								<li>Luxury Projects</li>
 							</Link>
 							<Link to='/apartments'>

@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom"
 import RootLayout from "../layouts/RootLayout"
-import { Blogs, Error, Home, Map, Search,About,Sell,Inquiry,Contact, Navigation, ProjectDetails, DubaiDevelopers, DubaiDeveloper, Amenities, RegisterInterest, DubaiArea, Privacy,DubaiAreasAll, LightBox, BlogDetails, Apartments, Explore, WhyDubai, InvestDubai, DubaiFacts, GuideTo, InvestIn, GuideRenting, GuideSelling } from "../pages"
+import { Blogs, Error, Home, Map, Search,About,Sell,Inquiry,Contact, Navigation, ProjectDetails, DubaiDevelopers, DubaiDeveloper, Amenities, RegisterInterest, DubaiArea, Privacy,DubaiAreasAll, LightBox, BlogDetails, Apartments, Explore, WhyDubai, InvestDubai, DubaiFacts, GuideTo, InvestIn, GuideRenting, GuideSelling, LatestProjects, LuxuryProjectsAll } from "../pages"
 
 
 
@@ -125,6 +125,14 @@ export const appRouter = createBrowserRouter([
 				path: "guide-on-selling",
 				element: <GuideSelling />,
 			},
+			{
+				path: 'latest-projects',
+				element: <LatestProjects/>
+			},
+			{
+				path: 'luxury-projects',
+				element:<LuxuryProjectsAll/>
+			}
 		],
 	},
 ])
