@@ -6,6 +6,10 @@ import { Link } from "react-router-dom"
 import SecondaryHeader from "../components/shared/SecondaryHeader"
 
 const Navigation = () => {
+	// const [linkName,setLinkName] = useState(linkName)
+	// const handleLink = () => {
+		
+	// }
 	const [show1, setShow1] = useState(false)
 	const [show2, setShow2] = useState(false)
 	const [show3, setShow3] = useState(false)
@@ -108,25 +112,25 @@ const Navigation = () => {
 				{show3 && (
 					<div className='dropdown'>
 						<ul className='text-base leading-10 pb-3'>
-							<Link to='/explore'>
+							<Link to='/why-dubai'>
 								<li>Why Dubai</li>
 							</Link>
-							<Link to='/explore'>
+							<Link to='/invest-in-dubai-real-estate'>
 								<li>Invest in Dubai Real Estate</li>
 							</Link>
-							<Link to='/explore'>
+							<Link to='/dubai-fact-numbers'>
 								<li>Dubai Fact Numbers</li>
 							</Link>
-							<Link to='/explore'>
-								<li>GUide To Off Plan</li>
+							<Link to='/guide-to-off-plan'>
+								<li>Guide To Off Plan</li>
 							</Link>
-							<Link to='/explore'>
+							<Link to='/why-invest-in-off-plan'>
 								<li>Why Invest In Off Plan</li>
 							</Link>
-							<Link to='/explore'>
+							<Link to='/guide-on-renting'>
 								<li>Guide on Renting</li>
 							</Link>
-							<Link to='/explore'>
+							<Link to='/guide-on-selling'>
 								<li>Guide to Selling</li>
 							</Link>
 						</ul>

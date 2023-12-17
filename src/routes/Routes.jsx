@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom"
 import RootLayout from "../layouts/RootLayout"
-import { Blogs, Error, Home, Map, Search,About,Sell,Inquiry,Contact, Navigation, ProjectDetails, DubaiDevelopers, DubaiDeveloper, Amenities, RegisterInterest, DubaiArea, Privacy,DubaiAreasAll, LightBox, BlogDetails, Apartments, Explore } from "../pages"
+import { Blogs, Error, Home, Map, Search,About,Sell,Inquiry,Contact, Navigation, ProjectDetails, DubaiDevelopers, DubaiDeveloper, Amenities, RegisterInterest, DubaiArea, Privacy,DubaiAreasAll, LightBox, BlogDetails, Apartments, Explore, WhyDubai, InvestDubai, DubaiFacts, GuideTo, InvestIn, GuideRenting, GuideSelling } from "../pages"
 
 
 
@@ -82,21 +82,49 @@ export const appRouter = createBrowserRouter([
 				element: <Inquiry />,
 			},
 			{
-				path: 'blog-details',
-				element:<BlogDetails />,
+				path: "blog-details",
+				element: <BlogDetails />,
 			},
 			{
-				path: 'apartments',
-				element:<Apartments />,
+				path: "apartments",
+				element: <Apartments />,
 			},
 			{
-				path: 'explore',
-				element:<Explore/>
+				path: "explore",
+				element: <Explore />,
 			},
 			{
-				path: 'privacy-policy',
-				element:<Privacy/>
-			}
+				path: "privacy-policy",
+				element: <Privacy />,
+			},
+			{
+				path: "why-dubai",
+				element: <WhyDubai />,
+			},
+			{
+				path: "invest-in-dubai-real-estate",
+				element: <InvestDubai />,
+			},
+			{
+				path: "dubai-fact-numbers",
+				element: <DubaiFacts />,
+			},
+			{
+				path: "guide-to-off-plan",
+				element: <GuideTo />,
+			},
+			{
+				path: "why-invest-in-off-plan",
+				element: <InvestIn />,
+			},
+			{
+				path: "guide-on-renting",
+				element: <GuideRenting />,
+			},
+			{
+				path: "guide-on-selling",
+				element: <GuideSelling />,
+			},
 		],
 	},
 ])

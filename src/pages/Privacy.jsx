@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import aboutImg from "/images/about.png"
 import FixedHeader from "../components/shared/FixedHeader"
 import { useEffect } from "react"
 import BottomNavigation from "../components/shared/BottomNavigation"

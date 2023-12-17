@@ -4,13 +4,14 @@ import FixedHeader from "../components/shared/FixedHeader";
 import { useEffect } from "react";
 import BottomNavigation from "../components/shared/BottomNavigation";
 
-const Explore = () => {
+const Explore = ({ title }) => {
+  console.log(title);
 useEffect(() => {
 			window.scrollTo(0, 0)
 		}, [])
 	return (
 		<div>
-			<FixedHeader link='/blogs' icon='back' text='Back' share />
+			<FixedHeader link='/navigation' icon='back' text='Back' share />
 			<div className='box-container mb-20'>
 				<div style={{ margin: "-20px -15px" }}>
 					<img src={aboutImg} alt='' />
@@ -19,13 +20,13 @@ useEffect(() => {
 					<span className='text-stone-500 '>
 						<small>
 							<Link to='/'>Home</Link>/{" "}
-							<Link to='/'>Invest in Dubai Real Estate</Link>
+              <Link to='/'>{title}</Link>
 							
 						</small>
 					</span>
 				</div>
 				<h2 className='heading my-4'>
-					Invest In Dubai Real Estate
+					{title}
 				</h2>
 				
 				<div className='mt-4'>
